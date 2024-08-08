@@ -1,3 +1,4 @@
+import './Learn.css'
 
 /**
  * 条件渲染 1 
@@ -8,9 +9,9 @@
 function judgeView1(needView: boolean) {
     let content;
     if (needView) {
-        content = <p>条件渲染1 needView: true</p>
+        content = <span>条件渲染1 needView: true</span>
     } else {
-        content = <p>条件渲染1 needView: false</p>
+        content = <span>条件渲染1 needView: false</span>
     }
     return (
         <div>
@@ -29,8 +30,8 @@ function judgeView2(needView: boolean) {
     return (
         <div>
             {needView
-                ? (<p>条件渲染2 needView: true</p>)
-                : (<p>条件渲染2 needView: false</p>)
+                ? (<span>条件渲染2 needView: true</span>)
+                : (<span>条件渲染2 needView: false</span>)
             }
         </div>
     );
@@ -45,14 +46,15 @@ function judgeView2(needView: boolean) {
 function judgeView3(needView: boolean) {
     return (
         <div>
-            {needView && <p>条件渲染3 needView: true</p>}
+            {needView && <span>条件渲染3 needView: true</span>}
         </div>
     );
 }
 
 function JudgeView() {
     return (
-        <div>
+        <div className='Learn-root-div'>
+            <h1 className='Learn-title'>条件渲染</h1>
             {judgeView1(true)}
             {judgeView2(false)}
             {judgeView3(true)}

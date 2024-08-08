@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MyFirstButton from './customviews/button/MyFirstButton';
-import JudgeView from './learn/JudgeView';
-import ListView from './learn/ListView';
+import MyFirstButton from './learn/basicknowledge/button/MyFirstButton';
+import JudgeView from './learn/basicknowledge/JudgeView';
+import ListView from './learn/basicknowledge/ListView';
+import ShareDataView from './learn/basicknowledge/ShareDataView';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +16,7 @@ root.render(
     <MyFirstButton/>
     <JudgeView/>
     <ListView/>
+    <ShareDataView/>
   </React.StrictMode>
 );
 
