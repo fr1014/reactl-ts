@@ -6,6 +6,7 @@ import MyFirstButton from './learn/basicknowledge/button/MyFirstButton';
 import JudgeView from './learn/basicknowledge/JudgeView';
 import ListView from './learn/basicknowledge/ListView';
 import ShareDataView from './learn/basicknowledge/ShareDataView';
+import SearchCategoryView from './learn/basicknowledge/SearchCategoryView';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,6 +18,7 @@ root.render(
     <JudgeView/>
     <ListView/>
     <ShareDataView/>
+    <SearchCategoryView/>
   </React.StrictMode>
 );
 
